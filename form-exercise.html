@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recap</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        label{
+            font-family: 'Roboto';
+            font-style: 'bold';
+            font-weight: 600;
+        }
+        label[for="email"]:hover{
+            color:lightgreen;
+        }
+        input{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+        }
+        .rTable {
+            display: table; 
+        }
+        .rTableRow { 
+            display: table-row; 
+        }
+        .rTableCell{ 
+            display: table-cell; 
+        }
+        div{
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Create a registration form with username,email and password as inputs and an button to submit the form -->
+    <!-- Set lable's font to Roboto Bold (600 weight) and inputs' font to Roboto Regular (400 weight) -->
+    <!-- Do not use table-->
+    <!-- Set same min-width for all labels -->
+    <!-- All field should have required field validation check-->
+    <!-- Change color of email's lables to a light green without setting any IDs or Class-->
+
+    <h2>Registeration Form</h2>
+    <form action="http://www.google.com/search" method="get">
+        <div class="rTable">
+            <div class="rTableRow">
+                <div class="rTableCell"><label for="name">Name</label></div>
+                <div class="rTableCell"><input type="name" name="username" id="username" required/></div>
+            </div>
+            <div class="rTableRow">
+                <div class="rTableCell"><label for="email" hover="">Email</label></div>
+                <div class="rTableCell"><input type="email" name="email" id="email" required/></div>
+            </div>
+            <div class="rTableRow">
+                <div class="rTableCell"><label for="password">Password</label></div>
+                <div class="rTableCell"><input type="password" name="password" id="password" required/></div>
+            </div>
+            <div class="rTableRow"><button type="submit" value="submit" name="submitbtn">Register</button></div>
+        </div>
+    </form>
+    
+    Ref : <a href="https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048" target="_blank"/>the-30-css-selectors-you-must-memorize</a>
+
+    
+</body>
+</html>
